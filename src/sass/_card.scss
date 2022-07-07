@@ -1,0 +1,149 @@
+.card-section{
+  padding-top: 1rem;
+}
+.card{
+  display: flex;
+  min-width: 600px;
+  width: 30%;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  .image-box{
+    width: 50%;
+    background-image: url(/src/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+   
+
+  }
+
+  .text-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 35px 40px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    
+  }
+  .intro{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: .5rem;
+    color: hsl(228, 12%, 48%);;
+  }
+
+  .gab{
+    margin-bottom: 2rem;
+    font-family: Fraunces;
+    font-weight: 700;
+  }
+
+  .content{
+    margin-bottom: 5rem;
+    color: hsl(228, 12%, 48%);
+  }
+
+  .price{
+    margin-bottom: 4rem;
+    
+
+    .new-price{
+      font-family: Fraunces;
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+      font-size: 3rem;
+    }
+
+    .old-price{
+      text-decoration:line-through;
+      margin-left:2rem;
+      color:hsl(228, 12%, 48%);
+    }
+  }
+
+  .btn:link, .btn:visited{
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: .5rem;
+    display:block;
+    text-align: center;
+    
+   
+  }
+
+  .btn:hover, .btn:active{
+    background-color: hsl(170, 60%, 2%);
+  }
+
+  
+}
+
+@media (max-width:23.4375em) {
+  .card-section{
+    width: 100%;
+  }
+  .card{
+    min-width: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+    .image-box{
+      width: 100%;
+      height: 21.875rem;
+      background-image: url(/src/images/image-product-mobile.jpg);
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .text-content{
+    width: 100%;
+    row-gap: 1.5rem;
+    padding: 2rem 2rem;
+    border-bottom: 0 0 1rem 1rem;
+    
+  }
+  .intro{
+    font-size: 1rem;
+   
+}
+
+  .gab{
+    font-size: 2rem;
+    line-height: 1;
+    width: fit-content;
+    
+  }
+
+  .content{
+    width: auto;
+    margin-bottom: 5rem;
+    color: hsl(228, 12%, 48%);
+    width: fit-content;
+  }
+  
+
+  .btn{
+    width: max-content;
+  }
+
+ 
+}
+
+
+@media (min-width:90em) {
+  .card{
+    min-width: 60rem;
+  }
+}
+
+
+
